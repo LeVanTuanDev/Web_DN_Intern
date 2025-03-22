@@ -3,7 +3,6 @@ using System.Net;
 using System.Net.Http.Headers;
 using Source_Demo.Lib;
 using Source_Demo.Models;
-using Source_Demo.Services;
 using System.Net.Http;
 using System;
 using Microsoft.AspNetCore.Http;
@@ -78,7 +77,6 @@ builder.Services.AddHttpClient("custom")
     .ConfigurePrimaryHttpMessageHandler(x => GetDefaultHttpClientHandler());
 
 builder.Services.AddSingleton<ICallApi, CallApi>();
-builder.Services.AddSingleton<IS_Student, S_Student>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

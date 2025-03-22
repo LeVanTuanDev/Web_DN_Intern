@@ -1,0 +1,10 @@
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.RazorAssemblyInfo.cache
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.RazorAssemblyInfo.cs
+C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\obj\Debug\net8.0\Source_Demo.sourcelink.json

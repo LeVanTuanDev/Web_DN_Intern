@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\views\\a_recruitmanage\\p_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_recruitmanage\\p_add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\views\\a_recruitmanage\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_recruitmanage\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\views\\a_recruitmanage\\p_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_recruitmanage\\p_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\views\\a_recruitmanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_recruitmanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "P_View.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_View.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_RecruitManage\\P_View.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_View.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_RecruitManage\\P_View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T13:35:11.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "P_Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_Edit.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_RecruitManage\\P_Edit.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_Edit.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_RecruitManage\\P_Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T13:34:59.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Program.cs",
-              "RelativeDocumentMoniker": "Source_Demo\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Program.cs",
-              "RelativeToolTip": "Source_Demo\\Program.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAgwIYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T08:46:23.391Z",
+              "Title": "P_Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_Add.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_RecruitManage\\P_Add.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\P_Add.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_RecruitManage\\P_Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T13:34:38.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_RecruitManage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Views\\A_RecruitManage\\Index.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_RecruitManage\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T13:32:50.245Z",
               "EditorCaption": ""
             }
           ]
