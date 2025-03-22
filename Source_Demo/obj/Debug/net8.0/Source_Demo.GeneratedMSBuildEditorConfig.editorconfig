@@ -9,75 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Source_Demo
 build_property.RootNamespace = Source_Demo
-build_property.ProjectDir = C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Source_Demo\Source_Demo\
+build_property.ProjectDir = C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Source_Demo\Source_Demo
+build_property.MSBuildProjectDirectory = C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\Web_Intern\Source_Demo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Home/Index.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_LayoutMaster.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_LayoutMaster.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_BreadCrumb.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_BreadCrumb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX0JyZWFkQ3J1bWIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_Navigation.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_Navigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX05hdmlnYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_Scripts.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1NjcmlwdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_ScriptsTableAndFormBasic.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_ScriptsTableAndFormBasic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1NjcmlwdHNUYWJsZUFuZEZvcm1CYXNpYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_Styles.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1N0eWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_StylesTableAndFormBasic.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_StylesTableAndFormBasic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1N0eWxlc1RhYmxlQW5kRm9ybUJhc2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_TopBar.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_TopBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1RvcEJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/Shared/_P_ValidationScripts.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/Shared/_P_ValidationScripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QX1ZhbGlkYXRpb25TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/StudentManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudE1hbmFnZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/StudentManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudE1hbmFnZVxQX0FkZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/StudentManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudE1hbmFnZVxQX0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/StudentManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudE1hbmFnZVxQX1ZpZXcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/_ViewImports.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Source_Demo/Source_Demo/Views/_ViewStart.cshtml]
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/Web_Intern/Source_Demo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

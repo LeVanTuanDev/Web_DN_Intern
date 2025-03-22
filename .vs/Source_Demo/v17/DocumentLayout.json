@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Source_Demo\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\web_intern\\source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Program.cs",
+              "RelativeDocumentMoniker": "Source_Demo\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\Web_Intern\\Source_Demo\\Program.cs",
+              "RelativeToolTip": "Source_Demo\\Program.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwIYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T08:46:23.391Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
