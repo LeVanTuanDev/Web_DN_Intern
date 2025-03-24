@@ -17,7 +17,6 @@ void GetDefaultHttpClient(IServiceProvider serviceProvider, HttpClient httpClien
 {
     if (!string.IsNullOrEmpty(hostUri))
         httpClient.BaseAddress = new Uri(hostUri);
-    //client.DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue { NoCache = true };
     httpClient.Timeout = TimeSpan.FromMinutes(1);
     httpClient.DefaultRequestHeaders.Clear();
     httpClient.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml+json");
@@ -37,56 +36,45 @@ HttpClientHandler GetDefaultHttpClientHandler()
     };
 }
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+.AddCookie(options =>
 {
-    options.Cookie = new CookieBuilder
-    {
-        //Domain = "cms.labadalat.com", //Releases in active
-        Name = "AuthCMS",
-        HttpOnly = true,
-        Path = "/",
-        SameSite = SameSiteMode.Lax,
-        SecurePolicy = CookieSecurePolicy.Always
-    };
-    options.LoginPath = new PathString("/Account/SignIn");
-    options.LogoutPath = new PathString("/Account/SignOut");
-    options.AccessDeniedPath = new PathString("/Error/403");
-    options.SlidingExpiration = true;
-    options.Cookie.IsEssential = true;
+    options.LoginPath = "/dang-nhap";
+    options.AccessDeniedPath = "/dang-nhap";
 });
+
 builder.Services.AddSession(options =>
 {
-    //options.Cookie.Domain = ".koolselling.com"; //Releases in active
     options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.Name = "Session";
     options.Cookie.SameSite = SameSiteMode.Lax;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     options.Cookie.IsEssential = true;
     options.Cookie.HttpOnly = true;
 });
 
-//builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly); //AutoMapperProfile
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.AddHttpClient("base")
     .ConfigureHttpClient((serviceProvider, httpClient) => GetDefaultHttpClient(serviceProvider, httpClient, builder.Configuration.GetSection("ApiSettings:UrlApi").Value))
-    .SetHandlerLifetime(TimeSpan.FromMinutes(5)) //Default is 2 min
+    .SetHandlerLifetime(TimeSpan.FromMinutes(5))
     .ConfigurePrimaryHttpMessageHandler(x => GetDefaultHttpClientHandler());
 
 builder.Services.AddHttpClient("custom")
     .ConfigureHttpClient((serviceProvider, httpClient) => GetDefaultHttpClient(serviceProvider, httpClient, string.Empty))
-    .SetHandlerLifetime(TimeSpan.FromMinutes(5)) //Default is 2 min
+    .SetHandlerLifetime(TimeSpan.FromMinutes(5))
     .ConfigurePrimaryHttpMessageHandler(x => GetDefaultHttpClientHandler());
 
 builder.Services.AddSingleton<ICallApi, CallApi>();
-builder.Services.AddSingleton<IS_Student, S_Student>();
 
-// Add services to the container.
+builder.Services.AddSingleton<IS_Account, S_Account>();
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthorization();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -101,7 +89,7 @@ app.UseStaticFiles(new StaticFileOptions
 {
     OnPrepareResponse = ctx =>
     {
-        const int durationInSeconds = 7 * 60 * 60 * 24; //7 days
+        const int durationInSeconds = 7 * 60 * 60 * 24;
         ctx.Context.Response.Headers[Microsoft.Net.Http.Headers.HeaderNames.CacheControl] =
             "public,max-age=" + durationInSeconds;
     }
@@ -113,7 +101,9 @@ app.UseSession();
 
 app.UseRouting();
 
-/*app.UseAuthorization();*/
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
@@ -126,6 +116,21 @@ app.UseEndpoints(endpoints =>
        name: "Error page",
        pattern: "error/{code}",
        defaults: new { controller = "Error", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Login",
+        pattern: "dang-nhap",
+        defaults: new { controller = "A_Account", action = "P_Login" });
+
+    endpoints.MapControllerRoute(
+        name: "Register",
+        pattern: "dang-ky",
+        defaults: new { controller = "A_Account", action = "P_Register" });
+
+    endpoints.MapControllerRoute(
+    name: "Logout",
+    pattern: "dang-xuat",
+    defaults: new { controller = "A_Account", action = "P_Logout" });
 
     endpoints.MapControllerRoute(
         name: "default",

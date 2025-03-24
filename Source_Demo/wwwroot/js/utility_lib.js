@@ -75,6 +75,10 @@ var _resultActionResource = {
     DeleteFail: "Xóa thất bại",
     ErrorAction: "Kết nối đến máy chủ không ổn định",
     PleaseWrite: "Bạn chưa nhập đủ hoặc thông tin không hợp lệ",
+
+    LogoutSuccess: "Đăng xuất hệ thống thành công",
+    LoginSuccess: "Đăng nhập hệ thống thành công",
+    RegisterSuccess: "Đăng ký tài khoản thành công",
 };
 
 var _languageDataTalbeObj = {

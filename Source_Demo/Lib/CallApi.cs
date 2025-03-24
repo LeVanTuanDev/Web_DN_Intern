@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Source_Demo.Lib;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -15,6 +16,8 @@ namespace Source_Demo.Lib
         Task<ResponseData<T>> PostDictHeaderResponseDataAsync<T>(string url, Dictionary<string, dynamic> dictPars, Dictionary<string, dynamic> dictHeads = default(Dictionary<string, dynamic>));
         Task<ResponseData<T>> PostResponseDataAsync<T>(string url, MultipartFormDataContent formData, string accessToken = "");
         Task<ResponseData<T>> PostResponseDataAsync<T>(string url, FormUrlEncodedContent xwwwFormUrlEndcoded, string accessToken = "");
+        Task<ResponseData<T>> PutResponseDataAsync<T>(string url, Dictionary<string, dynamic> dictPars, string accessToken = "");
+        Task<ResponseData<T>> DeleteResponseDataAsync<T>(string url, Dictionary<string, dynamic> dictPars, string accessToken = "");
     }
     public class CallApi : ICallApi
     {
@@ -268,6 +271,106 @@ namespace Source_Demo.Lib
                 if (!string.IsNullOrEmpty(accessToken))
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
                 HttpResponseMessage response = client.PostAsync(url, xwwwFormUrlEndcoded).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonres = await response.Content.ReadAsStringAsync();
+                    res = JsonConvert.DeserializeObject<ResponseData<T>>(jsonres);
+                }
+                else
+                {
+                    throw new ApiException
+                    {
+                        StatusCode = (int)response.StatusCode,
+                        Content = await response.Content.ReadAsStringAsync()
+                    };
+                }
+                return res;
+            }
+            catch (ApiException ex)
+            {
+                res.result = -1;
+                res.error = new error() { code = ex.StatusCode, message = ex.Content };
+                return res;
+            }
+            catch (Exception ex)
+            {
+                res.result = -1;
+                res.error = new error() { code = -1, message = ex.Message };
+                return res;
+            }
+
+        }
+        public async Task<ResponseData<T>> PutResponseDataAsync<T>(string url, Dictionary<string, dynamic> dictPars, string accessToken = "")
+        {
+            ResponseData<T> res = new ResponseData<T>();
+            try
+            {
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml+json");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                if (!string.IsNullOrEmpty(accessToken))
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+                MultipartFormDataContent formData = new MultipartFormDataContent();
+                if (dictPars != null)
+                    foreach (KeyValuePair<string, dynamic> item in dictPars)
+                        formData.Add(new StringContent(item.Value == null ? "" : item.Value.ToString()), item.Key);
+
+                HttpResponseMessage response = client.PutAsync(url, formData).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonres = await response.Content.ReadAsStringAsync();
+                    res = JsonConvert.DeserializeObject<ResponseData<T>>(jsonres);
+                }
+                else
+                {
+                    throw new ApiException
+                    {
+                        StatusCode = (int)response.StatusCode,
+                        Content = await response.Content.ReadAsStringAsync()
+                    };
+                }
+                return res;
+            }
+            catch (ApiException ex)
+            {
+                res.result = -1;
+                res.error = new error() { code = ex.StatusCode, message = ex.Content };
+                return res;
+            }
+            catch (Exception ex)
+            {
+                res.result = -1;
+                res.error = new error() { code = -1, message = ex.Message };
+                return res;
+            }
+
+        }
+        public async Task<ResponseData<T>> DeleteResponseDataAsync<T>(string url, Dictionary<string, dynamic> dictPars, string accessToken = "")
+        {
+            ResponseData<T> res = new ResponseData<T>();
+            try
+            {
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml+json");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                if (!string.IsNullOrEmpty(accessToken))
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+                var queryString = string.Empty;
+                if (dictPars != null)
+                {
+                    foreach (var item in dictPars)
+                    {
+                        queryString += $"{item.Key}={item.Value}&";
+                    }
+                    queryString = queryString.TrimEnd('&');
+                }
+                var urlWithQueryString = $"{url}?{queryString}";
+
+                HttpResponseMessage response = client.DeleteAsync(urlWithQueryString).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonres = await response.Content.ReadAsStringAsync();
