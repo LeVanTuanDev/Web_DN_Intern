@@ -1,5 +1,4 @@
 ﻿@model Source_Demo.Models.EM_Account
-
 @{
     Layout = "_LayoutBlank";
 }
@@ -7,10 +6,18 @@
 @section Styles {
     @await Html.PartialAsync("_P_StylesTableAndFormBasic")
     <link href="~/css/page-auth.css" rel="stylesheet" />
+
     <style>
+        .authentication-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .register-container {
             max-width: 450px;
-            margin: 0 auto;
+            width: 100%;
         }
 
             .register-container .form-control {
@@ -22,6 +29,10 @@
                 font-weight: 600;
             }
 
+        .input-group-text.cursor-pointer {
+            cursor: pointer;
+        }
+
         .btn-custom-purple {
             background-color: #6c63ff;
             color: #fff;
@@ -32,6 +43,22 @@
                 background-color: #5b53e6;
                 color: #fff;
             }
+
+        .card {
+            border: 2px solid #6c63ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input::-ms-reveal,
+        input::-ms-clear {
+            display: none;
+        }
+
+        input[type="password"]::-webkit-textfield-decoration-container,
+        input[type="password"]::-webkit-textfield-decoration-container button {
+            display: none !important;
+        }
     </style>
 }
 
@@ -46,31 +73,27 @@
         <div class="card px-sm-4 px-2 py-4">
             <div class="card-body">
                 <h3 class="mb-4 text-center">Đăng ký tài khoản mới!</h3>
-
                 <form id="form_register" class="mb-3" method="post">
                     <div class="mb-3">
                         <label asp-for="userName" class="form-label">Tài khoản</label>
                         <input asp-for="userName" type="text" class="form-control" placeholder="Nhập tài khoản" autofocus required />
                         <span asp-validation-for="userName" class="text-danger"></span>
                     </div>
-
                     <div class="mb-3 form-password-toggle">
                         <label asp-for="password" class="form-label">Mật khẩu</label>
                         <div class="input-group input-group-merge">
-                            <input asp-for="password" type="password" id="password" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="password" required />
+                            <input asp-for="password" type="password" id="registerPassword" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="password" required />
                             <span class="input-group-text cursor-pointer">
-                                <i class="bx bx-hide" onclick="togglePassword()"></i>
+                                <i class="bx bx-hide"></i>
                             </span>
                         </div>
                         <span asp-validation-for="password" class="text-danger"></span>
                     </div>
-
                     <div class="mb-3">
                         <label asp-for="email" class="form-label">Email</label>
                         <input asp-for="email" type="email" class="form-control" placeholder="Nhập email" required />
                         <span asp-validation-for="email" class="text-danger"></span>
                     </div>
-
                     <div class="row">
                         <div class="mb-3 col-6">
                             <label asp-for="lastName" class="form-label">Họ</label>
@@ -83,18 +106,15 @@
                             <span asp-validation-for="firstName" class="text-danger"></span>
                         </div>
                     </div>
-
                     <div class="mb-3">
                         <label asp-for="phone" class="form-label">Số điện thoại</label>
                         <input asp-for="phone" type="text" class="form-control" placeholder="Nhập số điện thoại" required pattern="\d{10,11}" title="Vui lòng nhập số điện thoại hợp lệ" />
                         <span asp-validation-for="phone" class="text-danger"></span>
                     </div>
-
                     <button id="btn_submit_register" type="submit" class="btn btn-custom-purple d-grid w-100" onclick="Register()">
                         Đăng ký
                     </button>
                 </form>
-
                 <p class="text-center mb-0">
                     <span>Bạn đã có tài khoản?</span>
                     <a href="dang-nhap">
@@ -105,14 +125,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    function togglePassword() {
-        var passwordField = document.getElementById("password");
-        if (passwordField.type === "password") {
-            passwordField.type = "text";
-        } else {
-            passwordField.type = "password";
-        }
-    }
-</script>

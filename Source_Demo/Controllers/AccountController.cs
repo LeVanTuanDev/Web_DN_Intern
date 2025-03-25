@@ -14,15 +14,16 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Source_Demo.Controllers
 {
-    public class AccountController : BaseController<AccountController>
+    public class A_AccountController : BaseController<A_AccountController>
     {
         private readonly IS_Account _s_Account;
 
-        public AccountController(IS_Account account)
+        public A_AccountController(IS_Account account)
         {
             _s_Account = account;
         }
 
+        [Route("dang-nhap")]
         public IActionResult P_Login()
         {
             return View();

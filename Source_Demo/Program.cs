@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Net;
 using System.Net.Http.Headers;
 using Source_Demo.Lib;
@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,11 +38,27 @@ HttpClientHandler GetDefaultHttpClientHandler()
 }
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-.AddCookie(options =>
-{
-    options.LoginPath = "/dang-nhap";
-    options.AccessDeniedPath = "/dang-nhap";
-});
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/dang-nhap";
+        options.AccessDeniedPath = "/dang-nhap";
+        options.ReturnUrlParameter = string.Empty;
+
+        options.Events = new CookieAuthenticationEvents
+        {
+            OnRedirectToLogin = context =>
+            {
+                context.Response.Redirect(context.Options.LoginPath);
+                return Task.CompletedTask;
+            },
+            OnRedirectToAccessDenied = context =>
+            {
+                context.Response.Redirect(context.Options.AccessDeniedPath);
+                return Task.CompletedTask;
+            }
+        };
+    });
+
 
 builder.Services.AddSession(options =>
 {

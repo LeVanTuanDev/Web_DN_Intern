@@ -8,26 +8,52 @@
     <link href="~/css/page-auth.css" rel="stylesheet" />
 
     <style>
+        .authentication-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .login-container {
             max-width: 450px;
-            margin: 0 auto;
+            width: 100%;
         }
-        .login-container .form-control {
-            border-radius: 6px;
-        }
-        .login-container label.form-label {
-            color: #6c63ff;
-            font-weight: 600;
-        }
+
+            .login-container .form-control {
+                border-radius: 6px;
+            }
+
+            .login-container label.form-label {
+                color: #6c63ff;
+                font-weight: 600;
+            }
+
         .btn-custom-purple {
             background-color: #6c63ff;
             color: #fff;
             border: none;
         }
 
-        .btn-custom-purple:hover {
-            background-color: #5b53e6;
-            color: #fff;
+            .btn-custom-purple:hover {
+                background-color: #5b53e6;
+                color: #fff;
+            }
+
+        .card {
+            border: 2px solid #6c63ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input::-ms-reveal,
+        input::-ms-clear {
+            display: none;
+        }
+
+        input[type="password"]::-webkit-textfield-decoration-container,
+        input[type="password"]::-webkit-textfield-decoration-container button {
+            display: none !important;
         }
     </style>
 }
@@ -55,7 +81,9 @@
                         <label asp-for="password" class="form-label">Mật khẩu</label>
                         <div class="input-group input-group-merge">
                             <input asp-for="password" type="password" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="password" />
-                            <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                            <span class="input-group-text cursor-pointer">
+                                <i class="bx bx-hide"></i>
+                            </span>
                         </div>
                         <span asp-validation-for="password" class="text-danger"></span>
                     </div>
