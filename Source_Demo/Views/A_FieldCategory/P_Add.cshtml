@@ -1,5 +1,30 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+<div class="modal-header">
+    <h5 class="modal-title">Thêm danh mục lĩnh vực</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form id="form_add" autocomplete="off">
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Tên danh mục</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="CategoryName" name="CategoryName" required />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Trạng thái</label>
+            <div class="col-sm-9">
+                <select class="form-select" id="Status" name="Status">
+                    <option value="1">Hoạt động</option>
+                    <option value="0">Khóa</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+    <button type="button" class="btn btn-primary" onclick="SubmitAdd()">Lưu</button>
+</div>

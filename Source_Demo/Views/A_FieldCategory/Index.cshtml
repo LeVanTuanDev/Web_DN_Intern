@@ -1,5 +1,103 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Quản lý danh mục lĩnh vực";
+
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+
+            {
+
+                ParentName = "Trang chủ",
+
+                CurrentName = "Quản lý danh mục lĩnh vực"
+
+            };
 }
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+    <script src="~/controllers/field_category.js" defer asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+@await Html.PartialAsync("_P_DeleteModal")
+
+<div class="row">
+    <div class="col-12 pagination-rounded">
+        <div class="card">
+            <div class="card-body table-responsive" id="div_main_table">
+                <div class="row border-bottom mb-1">
+                    <div class="row col-8 mx-0 px-1">
+                        <div class="col-auto mb-1 px-1">
+                            <button class="btn btn-primary waves-effect waves-light d-flex align-items-center gap-2"
+                                    onclick="ShowAddModal(this)">
+                                <span>Thêm mới</span>
+                                <i class='bx bx-plus-circle'></i>
+                            </button>
+                        </div>
+                        <div class="col-auto mb-1 px-1 d-flex align-items-center gap-2">
+                            <span class="form-label text-base">Trạng thái</span>
+                            <select class="form-select" id="search_status" onchange="Search();">
+                                <option value="1">Hoạt động</option>
+                                <option value="0">Khóa</option>
+                            </select>
+                        </div>
+                        <div class="col-auto mb-1 px-1">
+                            <button class="btn btn-info waves-effect waves-light" onclick="Search()">
+                                <i class="ti-search mr-1"></i> Xem
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-4 text-end">
+                        <a class="btn btn-warning text-white waves-effect waves-light" onclick="ExportExcel()">
+                            Xuất Excel
+                        </a>
+                        <button class="btn btn-success waves-effect waves-light" onclick="ShowImportModal(this)">
+                            Nhập Excel
+                        </button>
+                    </div>
+                </div>
+
+                <table id="table_main" class="table table-bordered nowrap text-blue" width="100%">
+                    <thead class="table-success">
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                <span style="font-size:13px;" id="refreshDataTable" onclick="Search()">
+                                    <i class="mdi mdi-autorenew"></i> Làm mới
+                                </span>
+                            </th>
+                            <th>Tên danh mục</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tfoot class="table-success">
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                <span style="font-size:13px;" id="refreshDataTableFooter" onclick="Search()">
+                                    <i class="mdi mdi-autorenew"></i> Làm mới
+                                </span>
+                            </th>
+                            <th>Tên danh mục</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @* Dữ liệu sẽ được load qua AJAX sử dụng DataTable từ file JS field_category.js *@
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-body" style="display:none;" id="div_view_panel">
+                @* Phần hiển thị chi tiết nếu cần *@
+            </div>
+        </div>
+    </div>
+</div>

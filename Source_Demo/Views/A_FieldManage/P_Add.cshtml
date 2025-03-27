@@ -1,5 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Thêm mới lĩnh vực";
 }
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+    <!-- File JS quản lý FieldManage (tự tạo) -->
+    <script src="~/controllers/field_manage.js" defer asp-append-version="true"></script>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4>Thêm mới lĩnh vực</h4>
+    </div>
+    <div class="card-body">
+        <form id="frmAddField" method="post" asp-controller="FieldManage" asp-action="P_Add">
+            <div class="mb-3">
+                <label class="form-label">Tên lĩnh vực</label>
+                <input type="text" name="Name" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mô tả</label>
+                <textarea name="Description" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Trạng thái</label>
+                <select name="Status" class="form-select" required>
+                    <option value="1">Hoạt động</option>
+                    <option value="0">Khóa</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Lưu</button>
+        </form>
+    </div>
+</div>

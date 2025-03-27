@@ -1,5 +1,42 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Source_Demo.Models.Field
 @{
+    ViewData["Title"] = "Chi tiết lĩnh vực";
 }
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+    <script src="~/controllers/field_manage.js" defer asp-append-version="true"></script>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4>Chi tiết lĩnh vực</h4>
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label class="form-label">Tên lĩnh vực:</label>
+            <p>@Model.Name</p>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mô tả:</label>
+            <p>@Model.Description</p>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Trạng thái:</label>
+            <p>@(Model.Status == 1 ? "Hoạt động" : "Khóa")</p>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ngày tạo:</label>
+            <p>@Model.CreatedDate.ToString("dd/MM/yyyy")</p>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cập nhật:</label>
+            <p>@(Model.UpdatedDate.HasValue ? Model.UpdatedDate.Value.ToString("dd/MM/yyyy") : "")</p>
+        </div>
+        <button type="button" class="btn btn-secondary" onclick="BackToList()">Quay lại danh sách</button>
+    </div>
+</div>

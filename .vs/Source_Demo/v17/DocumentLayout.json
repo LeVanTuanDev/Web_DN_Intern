@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\a_account\\p_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_account\\p_register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\a_fieldmanage\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_fieldmanage\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\a_account\\p_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_account\\p_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\a_fieldcategory\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_fieldcategory\\p_edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\a_fieldcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\a_fieldcategory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,33 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "P_Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_Account\\P_Register.cshtml",
-              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_Account\\P_Register.cshtml",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_Account\\P_Register.cshtml",
-              "RelativeToolTip": "Source_Demo\\Views\\A_Account\\P_Register.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwFcAAAAjAAAAAAAAAA==",
+              "Title": "P_Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldManage\\P_Edit.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_FieldManage\\P_Edit.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldManage\\P_Edit.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_FieldManage\\P_Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T05:54:45.766Z",
+              "WhenOpened": "2025-03-27T06:28:27.686Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "P_Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_Account\\P_Login.cshtml",
-              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_Account\\P_Login.cshtml",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_Account\\P_Login.cshtml",
-              "RelativeToolTip": "Source_Demo\\Views\\A_Account\\P_Login.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAFMAAAAbAAAAAAAAAA==",
+              "Title": "P_Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldCategory\\P_Edit.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_FieldCategory\\P_Edit.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldCategory\\P_Edit.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_FieldCategory\\P_Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T11:04:48.162Z",
+              "WhenOpened": "2025-03-27T06:28:18.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldCategory\\Index.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\A_FieldCategory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\A_FieldCategory\\Index.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\A_FieldCategory\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T06:28:13.954Z",
               "EditorCaption": ""
             }
           ]

@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Source_Demo
 build_property.RootNamespace = Source_Demo
@@ -108,6 +116,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryCategory/P_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5Q2F0ZWdvcnlcUF9WaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsCategory/Index.cshtml]

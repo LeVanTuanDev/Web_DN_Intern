@@ -11,8 +11,18 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using YourNamespace.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Lấy chuỗi kết nối từ appsettings.json
+string connectionString = builder.Configuration.GetConnectionString("MyDbConnection");
+
+// Đăng ký DbContext
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 void GetDefaultHttpClient(IServiceProvider serviceProvider, HttpClient httpClient, string hostUri)
 {
@@ -148,6 +158,61 @@ app.UseEndpoints(endpoints =>
     name: "Logout",
     pattern: "dang-xuat",
     defaults: new { controller = "A_Account", action = "P_Logout" });
+
+    endpoints.MapControllerRoute(
+        name: "Field Manage",
+        pattern: "quan-ly-linh-vuc",
+        defaults: new { controller = "A_FieldManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Field Category",
+        pattern: "danh-muc-linh-vuc",
+        defaults: new { controller = "A_FieldCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Recruit Manage",
+        pattern: "quan-ly-tuyen-dung",
+        defaults: new { controller = "A_RecruitManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Recruit Category",
+        pattern: "danh-muc-tuyen-dung",
+        defaults: new { controller = "A_RecruitCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "News Manage",
+        pattern: "quan-ly-tin-tuc",
+        defaults: new { controller = "A_NewsManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "News Category",
+        pattern: "danh-muc-tin-tuc",
+        defaults: new { controller = "A_NewsCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Album Category",
+        pattern: "quan-ly-album",
+        defaults: new { controller = "A_AlbumCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Image Manage",
+        pattern: "quan-ly-anh",
+        defaults: new { controller = "A_ImageManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Library Manage",
+        pattern: "quan-ly-thu-vien",
+        defaults: new { controller = "A_LibraryManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Library Category",
+        pattern: "danh-muc-thu-vien",
+        defaults: new { controller = "A_LibraryCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
+        name: "Partner Manage",
+        pattern: "quan-ly-doi-tac",
+        defaults: new { controller = "A_PartnerCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "default",
