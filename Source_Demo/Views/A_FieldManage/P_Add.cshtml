@@ -1,6 +1,23 @@
-﻿@{
-    ViewData["Title"] = "Thêm mới lĩnh vực";
+﻿@model Source_Demo.Models.EM_FieldOfActivity
+
+@{
+    ViewData["Title"] = "Thêm mới lĩnh vực hoạt động";
+
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+
+
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+
+            {
+
+                ParentName = "Quản lý lĩnh vực hoạt động",
+
+                CurrentName = "Thêm mới"
+
+            };
 }
+
 @section Styles {
     @await Html.PartialAsync("_P_StylesTableAndFormBasic")
     <link rel="stylesheet" href="~/css/site.css" />
@@ -8,32 +25,32 @@
 @section Scripts {
     @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
     <script src="~/js/utility_lib.js" asp-append-version="true"></script>
-    <!-- File JS quản lý FieldManage (tự tạo) -->
-    <script src="~/controllers/field_manage.js" defer asp-append-version="true"></script>
 }
 
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
 <div class="card">
-    <div class="card-header">
-        <h4>Thêm mới lĩnh vực</h4>
-    </div>
     <div class="card-body">
-        <form id="frmAddField" method="post" asp-controller="FieldManage" asp-action="P_Add">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <form asp-action="P_Add" method="post">
             <div class="mb-3">
-                <label class="form-label">Tên lĩnh vực</label>
-                <input type="text" name="Name" class="form-control" required />
+                <label asp-for="field_name" class="form-label"></label>
+                <input asp-for="field_name" class="form-control" />
+                <span asp-validation-for="field_name" class="text-danger"></span>
             </div>
+
             <div class="mb-3">
-                <label class="form-label">Mô tả</label>
-                <textarea name="Description" class="form-control"></textarea>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Trạng thái</label>
-                <select name="Status" class="form-select" required>
+                <label asp-for="status_" class="form-label">Trạng thái</label>
+                <select asp-for="status_" class="form-select">
                     <option value="1">Hoạt động</option>
                     <option value="0">Khóa</option>
                 </select>
+                <span asp-validation-for="status_" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Lưu</button>
+
+            <button type="submit" class="btn btn-success">Lưu</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
         </form>
     </div>
 </div>

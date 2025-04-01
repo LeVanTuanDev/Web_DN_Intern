@@ -57,24 +57,11 @@
     <ul class="menu-inner py-1">
         <!-- Lĩnh vực hoạt động -->
         <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Field">Lĩnh vực hoạt động</div>
+            <a asp-controller="FieldManage" asp-action="Index" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="FieldManage">Quản lý lĩnh vực hoạt động</div>
             </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a asp-controller="FieldManage" asp-action="Index" class="menu-link">
-                        <div data-i18n="FieldManage">Quản lý lĩnh vực</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a asp-controller="FieldCategory" asp-action="Index" class="menu-link">
-                        <div data-i18n="FieldCategory">Danh mục lĩnh vực</div>
-                    </a>
-                </li>
-            </ul>
         </li>
-
         <!-- Tuyển dụng -->
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">

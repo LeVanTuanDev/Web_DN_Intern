@@ -165,11 +165,6 @@ app.UseEndpoints(endpoints =>
         defaults: new { controller = "A_FieldManage", action = "Index" });
 
     endpoints.MapControllerRoute(
-        name: "Field Category",
-        pattern: "danh-muc-linh-vuc",
-        defaults: new { controller = "A_FieldCategory", action = "Index" });
-
-    endpoints.MapControllerRoute(
         name: "Recruit Manage",
         pattern: "quan-ly-tuyen-dung",
         defaults: new { controller = "A_RecruitManage", action = "Index" });
@@ -192,7 +187,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "Album Category",
         pattern: "quan-ly-album",
-        defaults: new { controller = "A_AlbumCategory", action = "Index" });
+        defaults: new { controller = "A_AlbumManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Image Manage",

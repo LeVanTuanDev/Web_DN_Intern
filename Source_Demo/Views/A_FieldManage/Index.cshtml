@@ -1,10 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Quản lý lĩnh vực";
+    ViewData["Title"] = "Quản lý lĩnh vực hoạt động";
     Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
     var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
             {
                 ParentName = "Trang chủ",
-                CurrentName = "Quản lý lĩnh vực"
+                CurrentName = "Quản lý lĩnh vực hoạt động"
             };
 }
 @section Styles {
@@ -27,9 +28,10 @@
                 <div class="row border-bottom mb-1">
                     <div class="row col-8 mx-0 px-1">
                         <div class="col-auto mb-1 px-1">
-                            <button class="btn btn-primary d-flex align-items-center gap-2" onclick="ShowAddModal(this)">
+                            <button class="btn btn-primary waves-effect waves-light d-flex align-items-center gap-2"
+                                    onclick="ShowAddModal(this)">
                                 <span>Thêm mới</span>
-                                <i class="bx bx-plus-circle"></i>
+                                <i class='bx bx-plus-circle'></i>
                             </button>
                         </div>
                         <div class="col-auto mb-1 px-1 d-flex align-items-center gap-2">
@@ -65,14 +67,10 @@
                                 </span>
                             </th>
                             <th>Tên lĩnh vực</th>
-                            <th>Mô tả</th>
                             <th>Trạng thái</th>
-                            <th>Ngày tạo</th>
-                            <th>Cập nhật</th>
+                            <th>Hành động</th>
                         </tr>
                     </thead>
-                    <tbody>
-                    </tbody>
                     <tfoot class="table-success">
                         <tr>
                             <th>#</th>
@@ -82,15 +80,17 @@
                                 </span>
                             </th>
                             <th>Tên lĩnh vực</th>
-                            <th>Mô tả</th>
                             <th>Trạng thái</th>
-                            <th>Ngày tạo</th>
-                            <th>Cập nhật</th>
+                            <th>Hành động</th>
                         </tr>
                     </tfoot>
+                    <tbody>
+                        @* Dữ liệu sẽ được load qua AJAX từ file JS field_manage.js *@
+                    </tbody>
                 </table>
             </div>
             <div class="card-body" style="display:none;" id="div_view_panel">
+                @* Phần hiển thị chi tiết nếu cần *@
             </div>
         </div>
     </div>

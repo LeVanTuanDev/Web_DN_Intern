@@ -1,5 +1,69 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Source_Demo.Models.EM_RecruitManage
+
 @{
+    ViewData["Title"] = "Thêm mới hồ sơ ứng tuyển";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+            {
+                ParentName = "Quản lý hồ sơ ứng tuyển",
+                CurrentName = "Thêm mới"
+            };
 }
+
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <form asp-action="P_Add" method="post">
+            <div class="mb-3">
+                <label asp-for="application_id" class="form-label"></label>
+                <input asp-for="application_id" class="form-control" />
+                <span asp-validation-for="application_id" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="recruitment_id" class="form-label"></label>
+                <input asp-for="recruitment_id" class="form-control" />
+                <span asp-validation-for="recruitment_id" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="full_name" class="form-label"></label>
+                <input asp-for="full_name" class="form-control" />
+                <span asp-validation-for="full_name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="education_level" class="form-label"></label>
+                <input asp-for="education_level" class="form-control" />
+                <span asp-validation-for="education_level" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="professional_qualifications" class="form-label"></label>
+                <input asp-for="professional_qualifications" class="form-control" />
+                <span asp-validation-for="professional_qualifications" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="cv_url" class="form-label"></label>
+                <input asp-for="cv_url" class="form-control" />
+                <span asp-validation-for="cv_url" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success">Lưu</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+    </div>
+</div>
