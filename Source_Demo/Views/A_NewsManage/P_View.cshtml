@@ -1,5 +1,65 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Source_Demo.Models.M_NewsManage
+
 @{
+    ViewData["Title"] = "Xem chi tiết tin tức";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+            {
+                ParentName = "Quản lý tin tức",
+                CurrentName = "Xem chi tiết"
+            };
 }
+
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">ID</label>
+            <p>@Model.news_id</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Danh mục tin tức (ID)</label>
+            <p>@Model.news_category_id</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Tên tin tức</label>
+            <p>@Model.news_name</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Mô tả ngắn</label>
+            <p>@Model.short_description</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Nội dung</label>
+            <p>@Model.content</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Trạng thái</label>
+            <p>@Model.status</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Slug</label>
+            <p>@Model.name_slug</p>
+        </div>
+
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>
