@@ -1,0 +1,81 @@
+﻿@model Source_Demo.Models.M_PartnerManage
+
+@{
+    ViewData["Title"] = "Xem chi tiết đối tác";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+            {
+                ParentName = "Quản lý đối tác",
+                CurrentName = "Xem chi tiết"
+            };
+}
+
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">ID</label>
+            <p>@Model.partner_id</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Tên đối tác</label>
+            <p>@Model.partner_name</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Tên viết tắt</label>
+            <p>@Model.abbreviation_name</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Logo/Hình</label>
+            <p>@Model.logo_image</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Website</label>
+            <p>@Model.website</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Email liên hệ</label>
+            <p>@Model.contact_email</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Số điện thoại</label>
+            <p>@Model.phone</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Ghi chú</label>
+            <p>@Model.note</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Mã danh mục</label>
+            <p>@Model.category_id</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Ngày tạo</label>
+            <p>@Model.created_at</p>
+        </div>
+
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>

@@ -191,7 +191,7 @@ app.UseEndpoints(endpoints =>
 
     endpoints.MapControllerRoute(
         name: "Image Manage",
-        pattern: "quan-ly-anh",
+        pattern: "quan-ly-hinh-anh",
         defaults: new { controller = "A_ImageManage", action = "Index" });
 
     endpoints.MapControllerRoute(
@@ -205,9 +205,14 @@ app.UseEndpoints(endpoints =>
         defaults: new { controller = "A_LibraryCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
+        name: "Partner Category",
+        pattern: "danh-muc-doi-tac",
+        defaults: new { controller = "A_PartnerCategory", action = "Index" });
+
+    endpoints.MapControllerRoute(
         name: "Partner Manage",
         pattern: "quan-ly-doi-tac",
-        defaults: new { controller = "A_PartnerCategory", action = "Index" });
+        defaults: new { controller = "A_PartnerManager", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "default",

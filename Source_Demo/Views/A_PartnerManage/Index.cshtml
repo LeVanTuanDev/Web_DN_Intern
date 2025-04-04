@@ -1,0 +1,88 @@
+﻿@model Source_Demo.Models.EM_PartnerManage
+
+@{
+    ViewData["Title"] = "Thêm mới đối tác";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+    {
+        ParentName = "Quản lý đối tác",
+        CurrentName = "Thêm mới"
+    };
+}
+
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <form asp-action="P_Add" method="post">
+            <div class="mb-3">
+                <label asp-for="partner_name" class="form-label"></label>
+                <input asp-for="partner_name" class="form-control" />
+                <span asp-validation-for="partner_name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="abbreviation_name" class="form-label"></label>
+                <input asp-for="abbreviation_name" class="form-control" />
+                <span asp-validation-for="abbreviation_name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="logo_image" class="form-label"></label>
+                <input asp-for="logo_image" class="form-control" />
+                <span asp-validation-for="logo_image" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="website" class="form-label"></label>
+                <input asp-for="website" class="form-control" />
+                <span asp-validation-for="website" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="contact_email" class="form-label"></label>
+                <input asp-for="contact_email" class="form-control" />
+                <span asp-validation-for="contact_email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="phone" class="form-label"></label>
+                <input asp-for="phone" class="form-control" />
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="note" class="form-label"></label>
+                <textarea asp-for="note" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="note" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="category_id" class="form-label"></label>
+                <input asp-for="category_id" class="form-control" />
+                <span asp-validation-for="category_id" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="created_at" class="form-label"></label>
+                <input asp-for="created_at" class="form-control" type="datetime-local" />
+                <span asp-validation-for="created_at" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success">Lưu</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+    </div>
+</div>
