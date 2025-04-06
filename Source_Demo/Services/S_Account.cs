@@ -44,11 +44,13 @@ namespace Source_Demo.Services
 
         public async Task<ResponseData<M_Account>> Login(EM_LoginAccount model)
         {
+            // Lọc XSS nếu cần
             model = CleanXSSHelper.CleanXSSObject(model);
+            // Sử dụng đúng tên thuộc tính theo model mới: username và pass_word
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"userName", model.userName},
-                {"password", model.password}
+                {"username", model.username},
+                {"pass_word", model.pass_word}
             };
             return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/LoginOps", dictPars);
         }
@@ -56,14 +58,14 @@ namespace Source_Demo.Services
         public async Task<ResponseData<M_Account>> Register(EM_Account model)
         {
             model = CleanXSSHelper.CleanXSSObject(model);
+            // Sử dụng các trường có trong model mới: username, pass_word, avatar_url, employee_id, role_id
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"userName", model.userName},
-                {"password", model.password},
-                {"firstName", model.firstName},
-                {"lastName", model.lastName},
-                {"email", model.email},
-                {"phone", model.phone}
+                {"username", model.username},
+                {"pass_word", model.pass_word},
+                {"avatar_url", model.avatar_url},
+                {"employee_id", model.employee_id},
+                {"role_id", model.role_id}
             };
             return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Register", dictPars);
         }
@@ -71,14 +73,15 @@ namespace Source_Demo.Services
         public async Task<ResponseData<M_Account>> Update(EM_Account model, int updatedBy)
         {
             model = CleanXSSHelper.CleanXSSObject(model);
+            // Cập nhật các trường tương ứng với model mới
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"id", model.id}, // đảm bảo gửi id nếu cần thiết cho API update
-                {"userName", model.userName},
-                {"firstName", model.firstName},
-                {"lastName", model.lastName},
-                {"email", model.email},
-                {"phone", model.phone}
+                {"username", model.username},
+                {"pass_word", model.pass_word},
+                {"avatar_url", model.avatar_url},
+                {"employee_id", model.employee_id},
+                {"role_id", model.role_id},
+                {"updatedBy", updatedBy}
             };
             return await _callApi.PutResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Update", dictPars);
         }
@@ -98,7 +101,7 @@ namespace Source_Demo.Services
             {
                 {"id", id},
                 {"status", status},
-                {"updatedBy", 8386} // hoặc sử dụng biến updatedBy nếu có từ phía client
+                {"updatedBy", 8386} 
             };
             return await _callApi.PutResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/UpdateStatus", dictPars);
         }

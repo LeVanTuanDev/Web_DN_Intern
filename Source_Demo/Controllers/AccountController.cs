@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Source_Demo.Lib;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Source_Demo.Controllers
@@ -39,17 +38,17 @@ namespace Source_Demo.Controllers
 
             var res = await _s_Account.Login(model);
 
-            if (res.result == 0 && res.data == null)
+            if (res.result == 0 || res.data == null)
             {
                 return Json(new { result = 0, error = new { message = "Tài khoản hoặc mật khẩu không đúng" } });
             }
 
             var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.Name, res.data.userName),
-        new Claim(ClaimTypes.Email, res.data.email),
-        new Claim("AccessToken", res.data.accessToken)
-    };
+            {
+                new Claim(ClaimTypes.Name, res.data.username),
+                new Claim("EmployeeId", res.data.employee_id.ToString()),
+                new Claim("RoleId", res.data.role_id.ToString())
+            };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var authProperties = new AuthenticationProperties
@@ -76,10 +75,6 @@ namespace Source_Demo.Controllers
         {
             var res = await _s_Account.Register(model);
             var jResult = new M_JResult();
-            if (res.data == null && res.result == 0)
-            {
-                return Json(jResult.MapData(res));
-            }
             return Json(jResult.MapData(res));
         }
 
@@ -93,6 +88,5 @@ namespace Source_Demo.Controllers
 
             return RedirectToAction("P_Login", "A_Account");
         }
-
     }
 }
