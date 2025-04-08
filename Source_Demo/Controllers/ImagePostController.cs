@@ -2,7 +2,7 @@
 
 namespace Source_Demo.Controllers
 {
-    public class ImageManageController : Controller
+    public class ImagePostController : Controller
     {
         public IActionResult Index()
         {

@@ -1,12 +1,12 @@
-﻿@model Source_Demo.Models.EM_LibraryManage
+﻿@model Source_Demo.Models.EM_ImageNews
 
 @{
-    ViewData["Title"] = "Chỉnh sửa thư viện";
+    ViewData["Title"] = "Chỉnh sửa ImageNews";
     Layout = "~/Views/Shared/_LayoutMaster.cshtml";
 
     var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
             {
-                ParentName = "Quản lý thư viện",
+                ParentName = "Quản lý ImageNews",
                 CurrentName = "Chỉnh sửa"
             };
 }
@@ -30,27 +30,27 @@
             <input type="hidden" asp-for="id" />
 
             <div class="mb-3">
-                <label asp-for="title" class="form-label"></label>
-                <input asp-for="title" class="form-control" />
-                <span asp-validation-for="title" class="text-danger"></span>
+                <label asp-for="news_id" class="form-label"></label>
+                <input asp-for="news_id" class="form-control" />
+                <span asp-validation-for="news_id" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="library_description" class="form-label"></label>
-                <textarea asp-for="library_description" class="form-control" rows="3"></textarea>
-                <span asp-validation-for="library_description" class="text-danger"></span>
+                <label asp-for="image_url" class="form-label"></label>
+                <input asp-for="image_url" class="form-control" />
+                <span asp-validation-for="image_url" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="category_id" class="form-label"></label>
-                <input asp-for="category_id" class="form-control" />
-                <span asp-validation-for="category_id" class="text-danger"></span>
+                <label asp-for="is_avatar" class="form-label">Ảnh đại diện?</label>
+                <input asp-for="is_avatar" type="checkbox" class="form-check-input" />
+                <span asp-validation-for="is_avatar" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="created_at" class="form-label"></label>
-                <input asp-for="created_at" type="datetime-local" class="form-control" />
-                <span asp-validation-for="created_at" class="text-danger"></span>
+                <label asp-for="create_at" class="form-label"></label>
+                <input asp-for="create_at" type="datetime-local" class="form-control" />
+                <span asp-validation-for="create_at" class="text-danger"></span>
             </div>
 
             <button type="submit" class="btn btn-primary">Cập nhật</button>

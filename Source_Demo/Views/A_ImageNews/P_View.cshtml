@@ -1,12 +1,12 @@
-﻿@model Source_Demo.Models.M_LibraryManage
+﻿@model Source_Demo.Models.M_ImageNews
 
 @{
-    ViewData["Title"] = "Xem chi tiết thư viện";
+    ViewData["Title"] = "Xem chi tiết ImageNews";
     Layout = "~/Views/Shared/_LayoutMaster.cshtml";
 
     var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
             {
-                ParentName = "Quản lý thư viện",
+                ParentName = "Quản lý ImageNews",
                 CurrentName = "Xem chi tiết"
             };
 }
@@ -32,23 +32,23 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-label fw-bold">Tiêu đề</label>
-            <p>@Model.title</p>
+            <label class="form-label fw-bold">Mã tin tức</label>
+            <p>@Model.news_id</p>
         </div>
 
         <div class="mb-3">
-            <label class="form-label fw-bold">Mô tả</label>
-            <p>@Model.library_description</p>
+            <label class="form-label fw-bold">Đường dẫn ảnh</label>
+            <p>@Model.image_url</p>
         </div>
 
         <div class="mb-3">
-            <label class="form-label fw-bold">Danh mục</label>
-            <p>@Model.category_id</p>
+            <label class="form-label fw-bold">Ảnh đại diện</label>
+            <p>@(Model.is_avatar ? "Có" : "Không")</p>
         </div>
 
         <div class="mb-3">
             <label class="form-label fw-bold">Ngày tạo</label>
-            <p>@Model.created_at</p>
+            <p>@Model.create_at</p>
         </div>
 
         <a asp-action="Index" class="btn btn-secondary">Quay lại</a>

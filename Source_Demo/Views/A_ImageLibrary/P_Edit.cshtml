@@ -1,0 +1,66 @@
+﻿@model Source_Demo.Models.EM_ImageLibrary
+
+@{
+    ViewData["Title"] = "Chỉnh sửa ImageLibrary";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+    var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
+            {
+                ParentName = "Quản lý ImageLibrary",
+                CurrentName = "Chỉnh sửa"
+            };
+}
+
+@section Styles {
+    @await Html.PartialAsync("_P_StylesTableAndFormBasic")
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+@section Scripts {
+    @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
+    <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+}
+
+@await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@ViewData["Title"]</h4>
+
+        <form asp-action="P_Edit" method="post">
+            <input type="hidden" asp-for="id" />
+
+            <div class="mb-3">
+                <label asp-for="library_id" class="form-label"></label>
+                <input asp-for="library_id" class="form-control" />
+                <span asp-validation-for="library_id" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="video_title" class="form-label"></label>
+                <input asp-for="video_title" class="form-control" />
+                <span asp-validation-for="video_title" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="video_url" class="form-label"></label>
+                <input asp-for="video_url" class="form-control" />
+                <span asp-validation-for="video_url" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="uploaded_at" class="form-label"></label>
+                <input asp-for="uploaded_at" type="datetime-local" class="form-control" />
+                <span asp-validation-for="uploaded_at" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="username" class="form-label"></label>
+                <input asp-for="username" class="form-control" />
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Cập nhật</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+    </div>
+</div>

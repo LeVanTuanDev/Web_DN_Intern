@@ -57,7 +57,7 @@
     <ul class="menu-inner py-1">
         <!-- Lĩnh vực hoạt động -->
         <li class="menu-item">
-            <a asp-controller="FieldManage" asp-action="Index" class="menu-link">
+            <a asp-controller="A_FieldManage" asp-action="Index" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="FieldManage">Quản lý lĩnh vực hoạt động</div>
             </a>
@@ -70,12 +70,12 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a asp-controller="RecruitManage" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_RecruitManage" asp-action="Index" class="menu-link">
                         <div data-i18n="RecruitManage">Quản lý tuyển dụng</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="RecruitCategory" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_RecruitCategory" asp-action="Index" class="menu-link">
                         <div data-i18n="RecruitCategory">Danh mục tuyển dụng</div>
                     </a>
                 </li>
@@ -90,32 +90,41 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a asp-controller="NewsManage" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_NewsManage" asp-action="Index" class="menu-link">
                         <div data-i18n="NewsManage">Quản lý tin tức</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="NewsCategory" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_NewsCategory" asp-action="Index" class="menu-link">
                         <div data-i18n="NewsCategory">Danh mục tin tức</div>
                     </a>
                 </li>
             </ul>
         </li>
 
-        <!-- Album -->
-        <li class="menu-item">
-            <a asp-controller="AlbumCategory" asp-action="Index" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Album">Quản lý album</div>
-            </a>
-        </li>
-
         <!-- Hình ảnh -->
         <li class="menu-item">
-            <a asp-controller="ImageManage" asp-action="Index" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Image">Quản lý hình ảnh</div>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Images">Hình ảnh</div>
             </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a asp-controller="A_ImagePost" asp-action="Index" class="menu-link">
+                        <div data-i18n="ImagePost">Hình ảnh bài viết</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="A_ImageNews" asp-action="Index" class="menu-link">
+                        <div data-i18n="ImageNews">Hình ảnh tin tức</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="A_ImageLibrary" asp-action="Index" class="menu-link">
+                        <div data-i18n="ImageLibrary">Hình ảnh thư viện</div>
+                    </a>
+                </li>
+            </ul>
         </li>
 
         <!-- Thư viện -->
@@ -126,12 +135,12 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a asp-controller="LibraryManage" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_LibraryManage" asp-action="Index" class="menu-link">
                         <div data-i18n="LibraryManage">Quản lý thư viện</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="LibraryCategory" asp-action="Index" class="menu-link">
+                    <a asp-controller="A_LibraryCategory" asp-action="Index" class="menu-link">
                         <div data-i18n="LibraryCategory">Danh mục thư viện</div>
                     </a>
                 </li>
@@ -140,10 +149,22 @@
 
         <!-- Đối tác -->
         <li class="menu-item">
-            <a asp-controller="PartnerCategory" asp-action="Index" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Partner">Quản lý đối tác</div>
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Partner">Đối tác</div>
             </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a asp-controller="A_PartnerManager" asp-action="Index" class="menu-link">
+                        <div data-i18n="PartnerManager">Quản lý đối tác</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="A_PartnerCategory" asp-action="Index" class="menu-link">
+                        <div data-i18n="PartnerCategory">Danh mục đối tác</div>
+                    </a>
+                </li>
+            </ul>
         </li>
     </ul>
 </aside>

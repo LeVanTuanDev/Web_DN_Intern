@@ -185,14 +185,19 @@ app.UseEndpoints(endpoints =>
         defaults: new { controller = "A_NewsCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
-        name: "Album Category",
-        pattern: "quan-ly-album",
-        defaults: new { controller = "A_AlbumManage", action = "Index" });
+        name: "Image News",
+        pattern: "hinh-anh-tin-tuc",
+        defaults: new { controller = "A_ImageNews", action = "Index" });
 
     endpoints.MapControllerRoute(
-        name: "Image Manage",
-        pattern: "quan-ly-hinh-anh",
-        defaults: new { controller = "A_ImageManage", action = "Index" });
+       name: "Image Library",
+       pattern: "hinh-anh-thu-vien",
+       defaults: new { controller = "A_ImageLibrary", action = "Index" });
+
+    endpoints.MapControllerRoute(
+       name: "Image Post",
+       pattern: "hinh-anh-bai-viet",
+       defaults: new { controller = "A_ImagePost", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Library Manage",

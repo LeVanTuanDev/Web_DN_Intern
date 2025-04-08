@@ -1,6 +1,6 @@
 ﻿namespace Source_Demo.Services
 {
-    public class S_AlbumManage
+    public class S_ImagePost
     {
     }
 }

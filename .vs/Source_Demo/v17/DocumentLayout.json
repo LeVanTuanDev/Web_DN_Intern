@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\services\\s_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\services\\s_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\shared\\_p_topbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\shared\\_p_topbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\models\\m_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\models\\m_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_P_TopBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAHsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T07:48:48.271Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "M_Account.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Models\\M_Account.cs",
-              "RelativeDocumentMoniker": "Source_Demo\\Models\\M_Account.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Models\\M_Account.cs",
-              "RelativeToolTip": "Source_Demo\\Models\\M_Account.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwCEAAAA5AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Program.cs",
+              "RelativeDocumentMoniker": "Source_Demo\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Program.cs",
+              "RelativeToolTip": "Source_Demo\\Program.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:45:58.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "S_Account.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Services\\S_Account.cs",
-              "RelativeDocumentMoniker": "Source_Demo\\Services\\S_Account.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Services\\S_Account.cs",
-              "RelativeToolTip": "Source_Demo\\Services\\S_Account.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAA4wGcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:42:28.717Z",
+              "WhenOpened": "2025-04-08T07:49:23.965Z",
               "EditorCaption": ""
             }
           ]

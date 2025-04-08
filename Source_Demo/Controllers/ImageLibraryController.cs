@@ -2,7 +2,7 @@
 
 namespace Source_Demo.Controllers
 {
-    public class AlbumManageController : Controller
+    public class ImageLibraryController : Controller
     {
         public IActionResult Index()
         {

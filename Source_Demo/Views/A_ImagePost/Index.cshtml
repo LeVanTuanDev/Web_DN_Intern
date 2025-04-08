@@ -1,11 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Quản lý thư viện";
+    ViewData["Title"] = "Quản lý ImagePost";
     Layout = "~/Views/Shared/_LayoutMaster.cshtml";
 
     var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
             {
                 ParentName = "Trang chủ",
-                CurrentName = "Quản lý thư viện"
+                CurrentName = "Quản lý ImagePost"
             };
 }
 
@@ -16,7 +16,7 @@
 @section Scripts {
     @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
     <script src="~/js/utility_lib.js" asp-append-version="true"></script>
-    <script src="~/controllers/library_manage.js" defer asp-append-version="true"></script>
+    <script src="~/controllers/image_post.js" defer asp-append-version="true"></script>
 }
 
 @await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
@@ -60,9 +60,9 @@
                                     <i class="mdi mdi-autorenew"></i> Làm mới
                                 </span>
                             </th>
-                            <th>Tiêu đề</th>
-                            <th>Mô tả</th>
-                            <th>Danh mục</th>
+                            <th>Post ID</th>
+                            <th>Đường dẫn ảnh</th>
+                            <th>Ảnh đại diện</th>
                             <th>Ngày tạo</th>
                             <th>Hành động</th>
                         </tr>
@@ -75,15 +75,15 @@
                                     <i class="mdi mdi-autorenew"></i> Làm mới
                                 </span>
                             </th>
-                            <th>Tiêu đề</th>
-                            <th>Mô tả</th>
-                            <th>Danh mục</th>
+                            <th>Post ID</th>
+                            <th>Đường dẫn ảnh</th>
+                            <th>Ảnh đại diện</th>
                             <th>Ngày tạo</th>
                             <th>Hành động</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        @* Dữ liệu sẽ được load qua AJAX từ file JS library_manage.js *@
+                        @* Dữ liệu sẽ được load qua AJAX từ file JS image_post.js *@
                     </tbody>
                 </table>
             </div>

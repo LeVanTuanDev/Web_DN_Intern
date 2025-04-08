@@ -1,6 +1,6 @@
 ﻿namespace Source_Demo.Services
 {
-    public class S_ImageManage
+    public class S_ImageNews
     {
     }
 }
