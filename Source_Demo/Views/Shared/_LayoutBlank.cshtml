@@ -1,5 +1,4 @@
-﻿﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
       data-template="vertical-menu-template-free">
 
@@ -7,9 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Demo Source</title>
+    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
     <meta name="description" content="" />
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico" />
+
+    <!-- Style -->
     <partial name="_P_Styles" />
 
     @RenderSection("Styles", required: false)
@@ -20,6 +22,7 @@
     <div class="container-xxl">
         @RenderBody()
     </div>
+    @* <partial name="" /> *@
     @await Html.PartialAsync("_P_Scripts")
     @RenderSection("Scripts", required: false)
 

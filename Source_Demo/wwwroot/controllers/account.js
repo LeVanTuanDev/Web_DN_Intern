@@ -1,6 +1,8 @@
 ﻿$(document).ready(function () {
     Login();
+    Register();
 });
+
 function Login() {
     $("#form_login").on("submit", function (e) {
         e.preventDefault();
@@ -19,6 +21,7 @@ function Login() {
             success: function (response) {
                 laddaSubmitForm.stop();
                 if (!CheckResponseIsSuccess(response)) {
+                    ShowToastNoti('error', '', response.error ? response.error.message : "Đăng nhập thất bại!");
                     return false;
                 }
                 ShowToastNoti('success', '', _resultActionResource.LoginSuccess);
@@ -28,7 +31,7 @@ function Login() {
             },
             error: function (err) {
                 laddaSubmitForm.stop();
-                CheckResponseIsSuccess({ result: -1, error: { code: err.status } });
+                ShowToastNoti('error', '', "Đăng nhập thất bại với mã lỗi: " + err.status);
             }
         });
     });
@@ -52,6 +55,7 @@ function Register() {
             success: function (response) {
                 laddaSubmitForm.stop();
                 if (!CheckResponseIsSuccess(response)) {
+                    ShowToastNoti('error', '', response.error ? response.error.message : "Đăng ký thất bại!");
                     return false;
                 }
                 ShowToastNoti('success', '', _resultActionResource.RegisterSuccess);
@@ -61,7 +65,7 @@ function Register() {
             },
             error: function (err) {
                 laddaSubmitForm.stop();
-                CheckResponseIsSuccess({ result: -1, error: { code: err.status } });
+                ShowToastNoti('error', '', "Đăng ký thất bại với mã lỗi: " + err.status);
             }
         });
     });
@@ -84,6 +88,7 @@ function Logout() {
                 type: 'GET',
                 success: function (response) {
                     if (!CheckResponseIsSuccess(response)) {
+                        ShowToastNoti('error', '', response.error ? response.error.message : "Đăng xuất thất bại!");
                         return;
                     }
                     ShowToastNoti('success', '', _resultActionResource.LogoutSuccess);
@@ -92,7 +97,7 @@ function Logout() {
                     }, 500);
                 },
                 error: function (err) {
-                    ShowToastNoti('error', '', "Đăng xuất thất bại!");
+                    ShowToastNoti('error', '', "Đăng xuất thất bại với mã lỗi: " + err.status);
                 }
             });
         }

@@ -50,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9GaWVsZE1hbmFnZVxQX1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Ib21lXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageLibrary/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZUxpYnJhcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -198,6 +194,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyTWFuYWdlXFBfVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0Q2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -228,6 +240,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitManage/P_View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0TWFuYWdlXFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Shared/_LayoutBlank.cshtml]

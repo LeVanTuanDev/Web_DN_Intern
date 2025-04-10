@@ -161,8 +161,13 @@ app.UseEndpoints(endpoints =>
 
     endpoints.MapControllerRoute(
         name: "Field Manage",
-        pattern: "quan-ly-linh-vuc",
+        pattern: "quan-ly-linh-vuc-hoat-dong",
         defaults: new { controller = "A_FieldManage", action = "Index" });
+
+    endpoints.MapControllerRoute(
+       name: "Post Manage",
+       pattern: "quan-ly-bai-viet",
+       defaults: new { controller = "A_PostManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Recruit Manage",
