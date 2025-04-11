@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Source_Demo.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,7 +19,7 @@ namespace Source_Demo.Controllers
         {
             _logger = logger;
         }
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult Index()
         {
             return View();

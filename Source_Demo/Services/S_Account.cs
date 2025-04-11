@@ -7,13 +7,11 @@ namespace Source_Demo.Services
 {
     public interface IS_Account
     {
-        Task<ResponseData<List<M_Account>>> getListAccountByStatus(int? status);
-        Task<ResponseData<M_Account>> getAccount(int id);
         Task<ResponseData<M_Account>> Login(EM_LoginAccount model);
         Task<ResponseData<M_Account>> Register(EM_Account model);
         Task<ResponseData<M_Account>> Update(EM_Account model, int updatedBy);
-        Task<ResponseData<M_Account>> Delete(int id);
-        Task<ResponseData<M_Account>> UpdateStatus(int id, int status);
+        Task<ResponseData<M_Account>> Delete(EM_Account model);
+        Task<ResponseData<M_Account>> UpdateAvatarURL(EM_Account model, int updatedBy);
     }
 
     public class S_Account : IS_Account
@@ -24,24 +22,6 @@ namespace Source_Demo.Services
             _callApi = callApi;
         }
 
-        public async Task<ResponseData<List<M_Account>>> getListAccountByStatus(int? status)
-        {
-            Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
-            {
-                {"status", status}
-            };
-            return await _callApi.GetResponseDataAsync<List<M_Account>>(GlobalVariables.url_api + "Account/GetListByStatus", dictPars);
-        }
-
-        public async Task<ResponseData<M_Account>> getAccount(int id)
-        {
-            Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
-            {
-                {"id", id}
-            };
-            return await _callApi.GetResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/GetById", dictPars);
-        }
-
         public async Task<ResponseData<M_Account>> Login(EM_LoginAccount model)
         {
             // Lọc XSS nếu cần
@@ -49,10 +29,10 @@ namespace Source_Demo.Services
             // Sử dụng đúng tên thuộc tính theo model mới: username và pass_word
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"username", model.username},
-                {"pass_word", model.pass_word}
+                {"Username", model.username},
+                {"PassWord", model.pass_word}
             };
-            return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/LoginOps", dictPars);
+            return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Login", dictPars);
         }
 
         public async Task<ResponseData<M_Account>> Register(EM_Account model)
@@ -61,13 +41,13 @@ namespace Source_Demo.Services
             // Sử dụng các trường có trong model mới: username, pass_word, avatar_url, employee_id, role_id
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"username", model.username},
-                {"pass_word", model.pass_word},
-                {"avatar_url", model.avatar_url},
-                {"employee_id", model.employee_id},
-                {"role_id", model.role_id}
+                {"Username", model.username},
+                {"PassWord", model.pass_word},
+                {"AvatarUrl", model.avatar_url},
+                {"EmployeeId", model.employee_id},
+                {"RoleId", model.role_id}
             };
-            return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Register", dictPars);
+            return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Create", dictPars);
         }
 
         public async Task<ResponseData<M_Account>> Update(EM_Account model, int updatedBy)
@@ -76,34 +56,34 @@ namespace Source_Demo.Services
             // Cập nhật các trường tương ứng với model mới
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"username", model.username},
-                {"pass_word", model.pass_word},
-                {"avatar_url", model.avatar_url},
-                {"employee_id", model.employee_id},
-                {"role_id", model.role_id},
+                {"Username", model.username},
+                {"PassWord", model.pass_word},
+                {"AvatarUrl", model.avatar_url},
+                {"EmployeeId", model.employee_id},
+                {"RoleId", model.role_id},
                 {"updatedBy", updatedBy}
             };
             return await _callApi.PutResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Update", dictPars);
         }
 
-        public async Task<ResponseData<M_Account>> Delete(int id)
+        public async Task<ResponseData<M_Account>> Delete(EM_Account model)
         {
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"id", id}
+                {"Username", model.username}
             };
             return await _callApi.DeleteResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Delete", dictPars);
         }
 
-        public async Task<ResponseData<M_Account>> UpdateStatus(int id, int status)
+        public async Task<ResponseData<M_Account>> UpdateAvatarURL(EM_Account model, int updatedBy)
         {
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
-                {"id", id},
-                {"status", status},
-                {"updatedBy", 8386} 
+                {"Username", model.username},
+                {"AvatarUrl", model.avatar_url},
+                {"updatedBy", 8386}
             };
-            return await _callApi.PutResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/UpdateStatus", dictPars);
+            return await _callApi.PutResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/ChangeAvatar", dictPars);
         }
     }
 }

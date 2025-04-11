@@ -26,224 +26,224 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\admin\OneDrive\Máy tính\THUCTAP\Project\De tai 2\Web_DN_Intern\Source_Demo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_Account/P_Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9BY2NvdW50XFBfTG9naW4uY3NodG1s
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Account/P_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQX0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_Account/P_Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9BY2NvdW50XFBfUmVnaXN0ZXIuY3NodG1s
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Account/P_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQX1JlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_FieldManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9GaWVsZE1hbmFnZVxJbmRleC5jc2h0bWw=
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/FieldManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmllbGRNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_FieldManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9GaWVsZE1hbmFnZVxQX0FkZC5jc2h0bWw=
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/FieldManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmllbGRNYW5hZ2VcUF9BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_FieldManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9GaWVsZE1hbmFnZVxQX0VkaXQuY3NodG1s
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/FieldManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmllbGRNYW5hZ2VcUF9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_FieldManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9GaWVsZE1hbmFnZVxQX1ZpZXcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageLibrary/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZUxpYnJhcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageLibrary/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZUxpYnJhcnlcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageLibrary/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZUxpYnJhcnlcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageLibrary/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZUxpYnJhcnlcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageNews/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZU5ld3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageNews/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZU5ld3NcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageNews/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZU5ld3NcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImageNews/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZU5ld3NcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImagePost/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZVBvc3RcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImagePost/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZVBvc3RcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImagePost/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZVBvc3RcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_ImagePost/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9JbWFnZVBvc3RcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5Q2F0ZWdvcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryCategory/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5Q2F0ZWdvcnlcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryCategory/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5Q2F0ZWdvcnlcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryCategory/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5Q2F0ZWdvcnlcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_LibraryManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9MaWJyYXJ5TWFuYWdlXFBfVmlldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzQ2F0ZWdvcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsCategory/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzQ2F0ZWdvcnlcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsCategory/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzQ2F0ZWdvcnlcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsCategory/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzQ2F0ZWdvcnlcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzTWFuYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzTWFuYWdlXFBfQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzTWFuYWdlXFBfRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_NewsManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9OZXdzTWFuYWdlXFBfVmlldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyQ2F0ZWdvcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerCategory/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyQ2F0ZWdvcnlcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerCategory/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyQ2F0ZWdvcnlcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerCategory/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyQ2F0ZWdvcnlcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyTWFuYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyTWFuYWdlXFBfQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyTWFuYWdlXFBfRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PartnerManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9QYXJ0bmVyTWFuYWdlXFBfVmlldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_PostManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9Qb3N0TWFuYWdlXFBfVmlldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitCategory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0Q2F0ZWdvcnlcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitCategory/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0Q2F0ZWdvcnlcUF9BZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitCategory/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0Q2F0ZWdvcnlcUF9FZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitCategory/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0Q2F0ZWdvcnlcUF9WaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitManage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0TWFuYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitManage/P_Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0TWFuYWdlXFBfQWRkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitManage/P_Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0TWFuYWdlXFBfRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/A_RecruitManage/P_View.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQV9SZWNydWl0TWFuYWdlXFBfVmlldy5jc2h0bWw=
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/FieldManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmllbGRNYW5hZ2VcUF9WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageLibrary/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VMaWJyYXJ5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageLibrary/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VMaWJyYXJ5XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageLibrary/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VMaWJyYXJ5XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageLibrary/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VMaWJyYXJ5XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageNews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VOZXdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageNews/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VOZXdzXFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageNews/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VOZXdzXFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImageNews/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VOZXdzXFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImagePost/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQb3N0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImagePost/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQb3N0XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImagePost/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQb3N0XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/ImagePost/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQb3N0XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryCategory/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhdGVnb3J5XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryCategory/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhdGVnb3J5XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryCategory/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhdGVnb3J5XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeU1hbmFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeU1hbmFnZVxQX0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeU1hbmFnZVxQX0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/LibraryManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeU1hbmFnZVxQX1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0NhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsCategory/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0NhdGVnb3J5XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsCategory/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0NhdGVnb3J5XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsCategory/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0NhdGVnb3J5XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c01hbmFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c01hbmFnZVxQX0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c01hbmFnZVxQX0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/NewsManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c01hbmFnZVxQX1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lckNhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerCategory/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lckNhdGVnb3J5XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerCategory/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lckNhdGVnb3J5XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerCategory/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lckNhdGVnb3J5XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lck1hbmFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lck1hbmFnZVxQX0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lck1hbmFnZVxQX0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PartnerManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lck1hbmFnZVxQX1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PostManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1hbmFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PostManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1hbmFnZVxQX0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PostManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1hbmFnZVxQX0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/PostManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1hbmFnZVxQX1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdENhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitCategory/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdENhdGVnb3J5XFBfQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitCategory/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdENhdGVnb3J5XFBfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitCategory/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdENhdGVnb3J5XFBfVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdE1hbmFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitManage/P_Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdE1hbmFnZVxQX0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitManage/P_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdE1hbmFnZVxQX0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/RecruitManage/P_View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjcnVpdE1hbmFnZVxQX1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/admin/OneDrive/Máy tính/THUCTAP/Project/De tai 2/Web_DN_Intern/Source_Demo/Views/Shared/_LayoutBlank.cshtml]

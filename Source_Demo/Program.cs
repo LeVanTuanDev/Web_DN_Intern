@@ -16,14 +16,6 @@ using Microsoft.EntityFrameworkCore;
 using YourNamespace.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Lấy chuỗi kết nối từ appsettings.json
-string connectionString = builder.Configuration.GetConnectionString("MyDbConnection");
-
-// Đăng ký DbContext
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
-
 void GetDefaultHttpClient(IServiceProvider serviceProvider, HttpClient httpClient, string hostUri)
 {
     if (!string.IsNullOrEmpty(hostUri))
@@ -147,17 +139,17 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "Login",
         pattern: "dang-nhap",
-        defaults: new { controller = "A_Account", action = "P_Login" });
+        defaults: new { controller = "Account", action = "P_Login" });
 
     endpoints.MapControllerRoute(
         name: "Register",
         pattern: "dang-ky",
-        defaults: new { controller = "A_Account", action = "P_Register" });
+        defaults: new { controller = "Account", action = "P_Register" });
 
     endpoints.MapControllerRoute(
     name: "Logout",
     pattern: "dang-xuat",
-    defaults: new { controller = "A_Account", action = "P_Logout" });
+    defaults: new { controller = "Account", action = "P_Logout" });
 
     endpoints.MapControllerRoute(
         name: "Field Manage",

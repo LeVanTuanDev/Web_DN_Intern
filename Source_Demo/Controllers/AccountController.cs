@@ -13,11 +13,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Source_Demo.Controllers
 {
-    public class A_AccountController : BaseController<A_AccountController>
+    public class AccountController : BaseController<AccountController>
     {
         private readonly IS_Account _s_Account;
 
-        public A_AccountController(IS_Account account)
+        public AccountController(IS_Account account)
         {
             _s_Account = account;
         }
@@ -86,7 +86,7 @@ namespace Source_Demo.Controllers
             HttpContext.Session.Clear();
             Response.Cookies.Delete("AccessToken");
 
-            return RedirectToAction("P_Login", "A_Account");
+            return RedirectToAction("P_Login", "Account");
         }
     }
 }
