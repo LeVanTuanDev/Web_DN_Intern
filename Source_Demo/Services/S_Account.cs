@@ -24,13 +24,11 @@ namespace Source_Demo.Services
 
         public async Task<ResponseData<M_Account>> Login(EM_LoginAccount model)
         {
-            // Lọc XSS nếu cần
             model = CleanXSSHelper.CleanXSSObject(model);
-            // Sử dụng đúng tên thuộc tính theo model mới: username và pass_word
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
                 {"Username", model.username},
-                {"PassWord", model.pass_word}
+                {"PassWord", model.password}
             };
             return await _callApi.PostResponseDataAsync<M_Account>(GlobalVariables.url_api + "Account/Login", dictPars);
         }
@@ -38,11 +36,10 @@ namespace Source_Demo.Services
         public async Task<ResponseData<M_Account>> Register(EM_Account model)
         {
             model = CleanXSSHelper.CleanXSSObject(model);
-            // Sử dụng các trường có trong model mới: username, pass_word, avatar_url, employee_id, role_id
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
                 {"Username", model.username},
-                {"PassWord", model.pass_word},
+                {"PassWord", model.password},
                 {"AvatarUrl", model.avatar_url},
                 {"EmployeeId", model.employee_id},
                 {"RoleId", model.role_id}
@@ -53,11 +50,10 @@ namespace Source_Demo.Services
         public async Task<ResponseData<M_Account>> Update(EM_Account model, int updatedBy)
         {
             model = CleanXSSHelper.CleanXSSObject(model);
-            // Cập nhật các trường tương ứng với model mới
             Dictionary<string, dynamic> dictPars = new Dictionary<string, dynamic>
             {
                 {"Username", model.username},
-                {"PassWord", model.pass_word},
+                {"PassWord", model.password},
                 {"AvatarUrl", model.avatar_url},
                 {"EmployeeId", model.employee_id},
                 {"RoleId", model.role_id},

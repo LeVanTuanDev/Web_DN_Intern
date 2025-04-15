@@ -76,11 +76,11 @@
                         </span>
                     </a>
                 </div>
-                <!-- /Logo -->
                 <h5 class="mb-1 text-center">Chào mừng đến với ECOTECH 2A! 👋</h5>
                 <h3 class="mb-4 text-center">Đăng nhập hệ thống!</h3>
 
-                <form asp-route="Login" method="post" id="form_login" class="mb-3">
+                @* <form asp-route="Login" method="post" id="form_login" class="mb-3"> *@
+                <form id="form_login">
                     <div class="mb-3">
                         <label asp-for="username" class="form-label">Tài khoản</label>
                         <input asp-for="username" class="form-control" placeholder="Nhập tài khoản" autofocus />
@@ -88,18 +88,18 @@
                     </div>
 
                     <div class="mb-3 form-password-toggle">
-                        <label asp-for="pass_word" class="form-label">Mật khẩu</label>
+                        <label asp-for="password" class="form-label">Mật khẩu</label>
                         <div class="input-group input-group-merge">
-                            <input asp-for="pass_word" type="password" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="password" />
+                            <input asp-for="password" type="password" class="form-control" placeholder="Nhập mật khẩu" aria-describedby="password" />
                             <span class="input-group-text cursor-pointer">
                                 <i class="bx bx-hide"></i>
                             </span>
                         </div>
-                        <span asp-validation-for="pass_word" class="text-danger"></span>
+                        <span asp-validation-for="password" class="text-danger"></span>
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-custom-purple d-grid w-100" id="btn_submit_login" onclick="Login()">
+                        <button type="submit" class="btn btn-custom-purple d-grid w-100" id="btn_submit_login">
                             Đăng nhập
                         </button>
                     </div>

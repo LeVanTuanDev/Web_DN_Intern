@@ -44,23 +44,19 @@ namespace Source_Demo.Controllers
             }
 
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, res.data.username),
-                new Claim("EmployeeId", res.data.employee_id.ToString()),
-                new Claim("RoleId", res.data.role_id.ToString())
-            };
+                    {
+                        new Claim("AccessToken", res.data.token),
+                    };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var authProperties = new AuthenticationProperties
             {
                 IsPersistent = true,
-                ExpiresUtc = DateTimeOffset.UtcNow.AddHours(1)
+                ExpiresUtc = DateTimeOffset.UtcNow.AddHours(24)
             };
 
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                new ClaimsPrincipal(claimsIdentity),
-                authProperties);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity), authProperties);
 
             return Json(new { result = 1, data = res.data });
         }
@@ -75,6 +71,10 @@ namespace Source_Demo.Controllers
         {
             var res = await _s_Account.Register(model);
             var jResult = new M_JResult();
+            if (res.data == null && res.result == 0)
+            {
+                return Json(jResult.MapData(res));
+            }
             return Json(jResult.MapData(res));
         }
 
@@ -88,5 +88,7 @@ namespace Source_Demo.Controllers
 
             return RedirectToAction("P_Login", "Account");
         }
+
+
     }
 }

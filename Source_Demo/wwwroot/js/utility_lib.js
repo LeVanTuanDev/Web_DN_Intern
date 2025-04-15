@@ -2,6 +2,12 @@
 const ACCEPT_EXTENSION_IMAGE_FILE = ".png,.jpg,.jpeg";
 const MAX_IMAGE_FILE = 4;
 
+function start() {
+    console.log("utility_lib start")
+}
+
+start()
+
 //Declare icon html
 var _loadAnimationSmallHtml = '<div class="spinner-border d-flex align-content-end flex-wrap" role="status" style="width:1rem;height:1rem;"><span class="sr-only">Loading...</span></div>',
     _iconEditHtml = '<i class="mdi mdi-square-edit-outline text-success"></i>',
@@ -197,7 +203,7 @@ function RemoveClassValidate(elm) {
 }
 
 //Show message error
-function ShowToastNoti(type, title, message, timeout = 2000, position = 'topRight') {
+function ShowToastNoti(type, title, message, timeout = 3000, position = 'topRight') {
     let icon = '<i class="iziToast-icon ico-question revealIn"></i>', color = '';
     switch (type) {
         case 'success': icon = '<i class="iziToast-icon ico-success revealIn"></i>'; color = 'green'; break;
@@ -216,8 +222,6 @@ function ShowToastNoti(type, title, message, timeout = 2000, position = 'topRigh
         position: position,
         progressBar: true,
         timeout: timeout,
-        transitionIn: 'flipInX',
-        transitionOut: 'flipOutX',
         progressBarColor: 'rgb(0, 255, 184)',
         imageWidth: 70,
         layout: 2,
@@ -232,6 +236,7 @@ function ShowHidePanel(panelShow, panelHide) {
         $(panelShow).slideDown(200);
     }, 100);
 }
+
 
 //show hide pande fadeout in
 function ShowHidePanelOI(panelShow, panelHide) {
@@ -249,11 +254,12 @@ function ShowPanel(panel) {
 //Hide panel
 function HidePanel(panel) {
     $(panel).fadeOut(200);
+    $(panel).hide()
 }
 
 //Back to talbe
 function BackToTable() {
-    ShowHidePanelOI('#div_main_table', '#div_view_panel');
+    // ShowHidePanelOI('#div_main_table', '#div_view_panel');
     $('.dataTables_scrollHeadInner').css('width', '100%');
     $('.dataTables_scrollFootInner').css('width', '100%');
     $('.dataTables_scrollHeadInner table').css('width', '100%');
@@ -461,17 +467,18 @@ function IsNumberKey(evt) {
 }
 
 //Init editor content summernote
-function InitEditorContent(element, name, palaceHolder) {
+function InitEditorContent(element, name, placeholder) {
+    console.log("Init editor summer note")
     $(element).summernote({
         codeviewFilter: true,
         codeviewIframeFilter: true,
-        placeholder: palaceHolder,
-        height: 230,
+        placeholder: placeholder,
+        height: 350,
         lang: "vi-VN",
         callbacks: {
-            onInit: function (e) {
-                $(e.editor).find(".custom-control-description").addClass("custom-control-label").parent().removeAttr("for")
-            },
+            // onInit: function (e) {
+            //     $(e.editor).find(".custom-control-description").addClass("custom-control-label").parent().removeAttr("for")
+            // },
             onChange: function (contents, $editable) {
                 $(name).val(contents);
             },
@@ -850,4 +857,15 @@ function AddDaysDiv(id, currentDate, addDays, format) {
         today = year + "-" + month + "-" + day + " " + hour + ":" + minutes + ":" + seconds; //yyyy-mm- dd HH:mm:ss
     //var today = day + "/" + month + "/" + year;
     $(id).text(today);
+}
+
+
+// init select2
+function InitSelect2(element, placeholder = "Chọn một mục") {
+    $(element).select2({
+        theme: "bootstrap-5",  // Dùng theme cho Bootstrap 5
+        placeholder: placeholder,
+        allowClear: true, // Hiển thị nút clear
+        width: "100%",
+    });
 }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Source_Demo.Models
 {
@@ -9,7 +10,9 @@ namespace Source_Demo.Models
         public string news_name { get; set; }
         public string short_description { get; set; }
         public string content { get; set; }
-        public int status_ { get; set; }
+
+        public bool status_ { get; set; } 
+
         public string name_slug { get; set; }
 
         // Các trường create_at, create_by, update_at, update_by kế thừa từ BaseCustom
@@ -33,8 +36,8 @@ namespace Source_Demo.Models
         [Required(ErrorMessage = "Vui lòng nhập nội dung")]
         public string content { get; set; }
 
-        [Required(ErrorMessage = "Vui lòng nhập trạng thái")]
-        public int status_ { get; set; }
+        [Required(ErrorMessage = "Vui lòng chọn trạng thái hiển thị")]
+        public bool status_ { get; set; } 
 
         [StringLength(200, ErrorMessage = "Slug có độ dài tối đa 200 ký tự")]
         public string name_slug { get; set; }

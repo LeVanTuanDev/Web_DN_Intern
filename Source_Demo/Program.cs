@@ -13,7 +13,6 @@ using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using YourNamespace.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 void GetDefaultHttpClient(IServiceProvider serviceProvider, HttpClient httpClient, string hostUri)
@@ -39,27 +38,29 @@ HttpClientHandler GetDefaultHttpClientHandler()
     };
 }
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.Cookie = new CookieBuilder
     {
-        options.LoginPath = "/dang-nhap";
-        options.AccessDeniedPath = "/dang-nhap";
-        options.ReturnUrlParameter = string.Empty;
-
-        options.Events = new CookieAuthenticationEvents
-        {
-            OnRedirectToLogin = context =>
-            {
-                context.Response.Redirect(context.Options.LoginPath);
-                return Task.CompletedTask;
-            },
-            OnRedirectToAccessDenied = context =>
-            {
-                context.Response.Redirect(context.Options.AccessDeniedPath);
-                return Task.CompletedTask;
-            }
-        };
-    });
+        //Domain = "cms.labadalat.com", //Releases in active
+        Name = "AuthCMS",
+        HttpOnly = true,
+        Path = "/",
+        SameSite = SameSiteMode.Lax,
+        SecurePolicy = CookieSecurePolicy.Always
+    };
+    options.LoginPath = new PathString("/dang-nhap");
+    options.ReturnUrlParameter = "";
+    //options.LogoutPath = new PathString("/Account/SignOut");
+    //options.AccessDeniedPath = new PathString("/Error/403");
+    options.SlidingExpiration = true;
+    options.Cookie.IsEssential = true;
+    options.Events.OnRedirectToLogin = context =>
+    {
+        context.Response.Redirect(options.LoginPath);
+        return Task.CompletedTask;
+    };
+});
 
 
 builder.Services.AddSession(options =>
@@ -87,6 +88,7 @@ builder.Services.AddHttpClient("custom")
 builder.Services.AddSingleton<ICallApi, CallApi>();
 
 builder.Services.AddSingleton<IS_Account, S_Account>();
+builder.Services.AddSingleton<IS_News, S_News>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization();
