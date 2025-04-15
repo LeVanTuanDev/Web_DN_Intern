@@ -10,9 +10,7 @@ namespace Source_Demo.Models
         public string news_name { get; set; }
         public string short_description { get; set; }
         public string content { get; set; }
-
         public bool status_ { get; set; } 
-
         public string name_slug { get; set; }
 
         // Các trường create_at, create_by, update_at, update_by kế thừa từ BaseCustom

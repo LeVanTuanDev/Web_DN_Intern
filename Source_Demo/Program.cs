@@ -156,67 +156,67 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "Field Manage",
         pattern: "quan-ly-linh-vuc-hoat-dong",
-        defaults: new { controller = "A_FieldManage", action = "Index" });
+        defaults: new { controller = "FieldManage", action = "Index" });
 
     endpoints.MapControllerRoute(
        name: "Post Manage",
        pattern: "quan-ly-bai-viet",
-       defaults: new { controller = "A_PostManage", action = "Index" });
+       defaults: new { controller = "PostManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Recruit Manage",
         pattern: "quan-ly-tuyen-dung",
-        defaults: new { controller = "A_RecruitManage", action = "Index" });
+        defaults: new { controller = "RecruitManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Recruit Category",
         pattern: "danh-muc-tuyen-dung",
-        defaults: new { controller = "A_RecruitCategory", action = "Index" });
+        defaults: new { controller = "RecruitCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "News Manage",
         pattern: "quan-ly-tin-tuc",
-        defaults: new { controller = "A_NewsManage", action = "Index" });
+        defaults: new { controller = "NewsManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "News Category",
         pattern: "danh-muc-tin-tuc",
-        defaults: new { controller = "A_NewsCategory", action = "Index" });
+        defaults: new { controller = "NewsCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Image News",
         pattern: "hinh-anh-tin-tuc",
-        defaults: new { controller = "A_ImageNews", action = "Index" });
+        defaults: new { controller = "ImageNews", action = "Index" });
 
     endpoints.MapControllerRoute(
        name: "Image Library",
        pattern: "hinh-anh-thu-vien",
-       defaults: new { controller = "A_ImageLibrary", action = "Index" });
+       defaults: new { controller = "ImageLibrary", action = "Index" });
 
     endpoints.MapControllerRoute(
        name: "Image Post",
        pattern: "hinh-anh-bai-viet",
-       defaults: new { controller = "A_ImagePost", action = "Index" });
+       defaults: new { controller = "ImagePost", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Library Manage",
         pattern: "quan-ly-thu-vien",
-        defaults: new { controller = "A_LibraryManage", action = "Index" });
+        defaults: new { controller = "LibraryManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Library Category",
         pattern: "danh-muc-thu-vien",
-        defaults: new { controller = "A_LibraryCategory", action = "Index" });
+        defaults: new { controller = "LibraryCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Partner Category",
         pattern: "danh-muc-doi-tac",
-        defaults: new { controller = "A_PartnerCategory", action = "Index" });
+        defaults: new { controller = "PartnerCategory", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "Partner Manage",
         pattern: "quan-ly-doi-tac",
-        defaults: new { controller = "A_PartnerManager", action = "Index" });
+        defaults: new { controller = "PartnerManage", action = "Index" });
 
     endpoints.MapControllerRoute(
         name: "default",

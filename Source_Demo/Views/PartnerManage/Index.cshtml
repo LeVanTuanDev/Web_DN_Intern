@@ -1,14 +1,12 @@
-﻿@model Source_Demo.Models.EM_PartnerManage
-
-@{
-    ViewData["Title"] = "Thêm mới đối tác";
+﻿@{
+    ViewData["Title"] = "Quản lý đối tác";
     Layout = "~/Views/Shared/_LayoutMaster.cshtml";
 
     var breadCrumb = new Source_Demo.ViewModels.VM_BreadCrumb
-    {
-        ParentName = "Quản lý đối tác",
-        CurrentName = "Thêm mới"
-    };
+            {
+                ParentName = "Trang chủ",
+                CurrentName = "Quản lý đối tác"
+            };
 }
 
 @section Styles {
@@ -18,71 +16,72 @@
 @section Scripts {
     @await Html.PartialAsync("_P_ScriptsTableAndFormBasic")
     <script src="~/js/utility_lib.js" asp-append-version="true"></script>
+    <script src="~/controllers/partner_manage.js" defer asp-append-version="true"></script>
 }
 
 @await Html.PartialAsync("_P_BreadCrumb", breadCrumb)
+@await Html.PartialAsync("_P_DeleteModal")
 
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title">@ViewData["Title"]</h4>
+<div class="row">
+    <div class="col-12 pagination-rounded">
+        <div class="card">
+            <div class="card-body table-responsive" id="div_main_table">
+                <div class="row border-bottom mb-1">
+                    <div class="row col-8 mx-0 px-1">
+                        <div class="col-auto mb-1 px-1">
+                            <button class="btn btn-primary waves-effect waves-light d-flex align-items-center gap-2"
+                                    onclick="ShowAddModal(this)">
+                                <span>Thêm mới</span>
+                                <i class="bx bx-plus-circle"></i>
+                            </button>
+                        </div>
+                        <div class="col-auto mb-1 px-1">
+                            <button class="btn btn-info waves-effect waves-light" onclick="Search()">
+                                <i class="ti-search mr-1"></i> Xem
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-4 text-end">
+                        <a class="btn btn-warning text-white waves-effect waves-light" onclick="ExportExcel()">
+                            Xuất Excel
+                        </a>
+                        <button class="btn btn-success waves-effect waves-light" onclick="ShowImportModal(this)">
+                            Nhập Excel
+                        </button>
+                    </div>
+                </div>
 
-        <form asp-action="P_Add" method="post">
-            <div class="mb-3">
-                <label asp-for="partner_name" class="form-label"></label>
-                <input asp-for="partner_name" class="form-control" />
-                <span asp-validation-for="partner_name" class="text-danger"></span>
+                <table id="table_main" class="table table-bordered nowrap text-blue" width="100%">
+                    <thead class="table-success">
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                <span style="font-size:13px;" id="refreshDataTable" onclick="Search()">
+                                    <i class="mdi mdi-autorenew"></i> Làm mới
+                                </span>
+                            </th>
+                            <th>Tên đối tác</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tfoot class="table-success">
+                        <tr>
+                            <th>#</th>
+                            <th>
+                                <span style="font-size:13px;" id="refreshDataTableFooter" onclick="Search()">
+                                    <i class="mdi mdi-autorenew"></i> Làm mới
+                                </span>
+                            </th>
+                            <th>Tên đối tác</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
-
-            <div class="mb-3">
-                <label asp-for="abbreviation_name" class="form-label"></label>
-                <input asp-for="abbreviation_name" class="form-control" />
-                <span asp-validation-for="abbreviation_name" class="text-danger"></span>
+            <div class="card-body" style="display:none;" id="div_view_panel">
             </div>
-
-            <div class="mb-3">
-                <label asp-for="logo_image" class="form-label"></label>
-                <input asp-for="logo_image" class="form-control" />
-                <span asp-validation-for="logo_image" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="website" class="form-label"></label>
-                <input asp-for="website" class="form-control" />
-                <span asp-validation-for="website" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="contact_email" class="form-label"></label>
-                <input asp-for="contact_email" class="form-control" />
-                <span asp-validation-for="contact_email" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="phone" class="form-label"></label>
-                <input asp-for="phone" class="form-control" />
-                <span asp-validation-for="phone" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="note" class="form-label"></label>
-                <textarea asp-for="note" class="form-control" rows="3"></textarea>
-                <span asp-validation-for="note" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="category_id" class="form-label"></label>
-                <input asp-for="category_id" class="form-control" />
-                <span asp-validation-for="category_id" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label asp-for="created_at" class="form-label"></label>
-                <input asp-for="created_at" class="form-control" type="datetime-local" />
-                <span asp-validation-for="created_at" class="text-danger"></span>
-            </div>
-
-            <button type="submit" class="btn btn-success">Lưu</button>
-            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
-        </form>
+        </div>
     </div>
 </div>

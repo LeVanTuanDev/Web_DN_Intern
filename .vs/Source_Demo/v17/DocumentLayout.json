@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\shared\\_p_topbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\shared\\_p_topbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\shared\\_layoutmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\shared\\_layoutmaster.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\wwwroot\\controllers\\account.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\wwwroot\\controllers\\account.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\thuctap\\project\\de tai 2\\web_dn_intern\\source_demo\\views\\partnermanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C082519-DD9B-4590-8F69-3C3DEAE74DDC}|Source_Demo\\Source_Demo.csproj|solutionrelative:source_demo\\views\\partnermanage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LayoutMaster.cshtml",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_LayoutMaster.cshtml",
-              "RelativeDocumentMoniker": "Source_Demo\\Views\\Shared\\_LayoutMaster.cshtml",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_LayoutMaster.cshtml",
-              "RelativeToolTip": "Source_Demo\\Views\\Shared\\_LayoutMaster.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T04:43:27.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_P_TopBar.cshtml",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
-              "RelativeDocumentMoniker": "Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
-              "RelativeToolTip": "Source_Demo\\Views\\Shared\\_P_TopBar.cshtml",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAYwLcAAAAIAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\PartnerManage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Source_Demo\\Views\\PartnerManage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Views\\PartnerManage\\Index.cshtml",
+              "RelativeToolTip": "Source_Demo\\Views\\PartnerManage\\Index.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAE4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-15T04:31:59.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Program.cs",
-              "RelativeDocumentMoniker": "Source_Demo\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Program.cs",
-              "RelativeToolTip": "Source_Demo\\Program.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAgwJgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:20:28.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Source_Demo\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Source_Demo\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAqwF0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T09:13:10.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "account.js",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\wwwroot\\controllers\\account.js",
-              "RelativeDocumentMoniker": "Source_Demo\\wwwroot\\controllers\\account.js",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\M\u00E1y t\u00EDnh\\THUCTAP\\Project\\De tai 2\\Web_DN_Intern\\Source_Demo\\wwwroot\\controllers\\account.js",
-              "RelativeToolTip": "Source_Demo\\wwwroot\\controllers\\account.js",
-              "ViewState": "AgIAAEQAAAAAAAAAAAA8wCIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T08:06:09.759Z",
+              "WhenOpened": "2025-04-15T14:51:48.954Z",
               "EditorCaption": ""
             }
           ]
