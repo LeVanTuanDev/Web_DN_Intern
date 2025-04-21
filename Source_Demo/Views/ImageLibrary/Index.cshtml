@@ -35,19 +35,21 @@
                                 <i class="bx bx-plus-circle"></i>
                             </button>
                         </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 mb-1 px-1">
+                            <div class="input-group input-group-sm">
+                                <label class="input-group-text" for="search_status">Trạng thái</label>
+                                <select class="form-select" id="search_status" onchange="Search();">
+                                    <option value="1">Hoạt động</option>
+                                    <option value="0">Khóa</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="col-auto mb-1 px-1">
-                            <button class="btn btn-info waves-effect waves-light" onclick="Search()">
+                            <button class="ladda-button btn btn-sm btn-info waves-effect waves-light" onclick="Search()">
                                 <i class="ti-search mr-1"></i> Xem
                             </button>
                         </div>
-                    </div>
-                    <div class="col-4 text-end">
-                        <a class="btn btn-warning text-white waves-effect waves-light" onclick="ExportExcel()">
-                            Xuất Excel
-                        </a>
-                        <button class="btn btn-success waves-effect waves-light" onclick="ShowImportModal(this)">
-                            Nhập Excel
-                        </button>
                     </div>
                 </div>
 

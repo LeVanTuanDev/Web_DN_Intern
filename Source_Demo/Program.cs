@@ -88,7 +88,7 @@ builder.Services.AddHttpClient("custom")
 builder.Services.AddSingleton<ICallApi, CallApi>();
 
 builder.Services.AddSingleton<IS_Account, S_Account>();
-builder.Services.AddSingleton<IS_News, S_News>();
+builder.Services.AddSingleton<IS_NewsManage, S_NewsManage>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization();
